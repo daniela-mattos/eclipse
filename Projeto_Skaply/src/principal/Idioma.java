@@ -3,6 +3,10 @@ package principal;
 public class Idioma {
 
 	private String idioma;
+	
+	public Idioma(String idioma) {
+		this.idioma = idioma;
+	}
 
 	public String getIdioma() {
 		return idioma;

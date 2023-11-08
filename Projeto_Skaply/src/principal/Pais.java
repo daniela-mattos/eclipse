@@ -3,12 +3,12 @@ package principal;
 public class Pais {
 
 	private String nomePais;
-	private Idioma idiomaPais;
+	private Idioma idioma;
 
 
-public Pais(String nome, Idioma idiomaPais) {
+public Pais(String nome, Idioma idioma) {
 	setNomePais(nome);
-	this.setIdiomaPais(idiomaPais);
+	this.setIdiomaPais(idioma);
 }
 
 
@@ -23,16 +23,16 @@ public void setNomePais(String nomePais) {
 
 
 public Idioma getIdiomaPais() {
-	return idiomaPais;
+	return idioma;
 }
 
 
-public void setIdiomaPais(Idioma idiomaPais) {
-	this.idiomaPais = idiomaPais;
+public void setIdiomaPais(Idioma idioma) {
+	this.idioma = idioma;
 }
 
 public String toString() {
-    return "País [País: " + nomePais + ", Idioma: " + idiomaPais + "] ";
+    return "País [País: " + nomePais + ", Idioma: " + idioma + "] ";
 }
 
 }

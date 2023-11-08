@@ -37,6 +37,8 @@ public class Ficha {
 	}
 	
 	
-	
+	public String toString() {
+		return "Ficha [Livro: " + livroFinalizado + " Resenha: " + resenha + " Nota: " + nota + "] ";
+	}
 	
 }

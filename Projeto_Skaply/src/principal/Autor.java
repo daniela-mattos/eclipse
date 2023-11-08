@@ -2,57 +2,57 @@ package principal;
 
 public class Autor {
 
-	private String nomeAutor;
-	private String corAutor;
-	private String generoAutor;
-	private Pais paisAutor;
+	private String nome;
+	private String cor;
+	private String genero;
+	private Pais pais;
 	
 	
-	public Autor(String nomeAutor) {
-		this.nomeAutor = nomeAutor;
+	public Autor(String nome) {
+		this.nome = nome;
 	}
 	
-	public Autor(String nomeAutor, String corAutor, String generoAutor) {
-		this.nomeAutor = nomeAutor;
-		this.corAutor = corAutor;
-		this.generoAutor = generoAutor;
+	public Autor(String nome, String cor, String genero) {
+		this.nome = nome;
+		this.cor = cor;
+		this.genero = genero;
 	}
 
 	public String getNomeAutor() {
-		return nomeAutor;
+		return nome;
 	}
 
-	public void setNomeAutor(String nomeAutor) {
-		this.nomeAutor = nomeAutor;
+	public void setNomeAutor(String nome) {
+		this.nome = nome;
 	}
 
 	public String getCorAutor() {
-		return corAutor;
+		return cor;
 	}
 
-	public void setCorAutor(String corAutor) {
-		this.corAutor = corAutor;
+	public void setCorAutor(String cor) {
+		this.cor = cor;
 	}
 
 	public String getGeneroAutor() {
-		return generoAutor;
+		return genero;
 	}
 
-	public void setGeneroAutor(String generoAutor) {
-		this.generoAutor = generoAutor;
+	public void setGeneroAutor(String genero) {
+		this.genero = genero;
 	}
 
 	public Pais getPaisAutor() {
-		return paisAutor;
+		return pais;
 	}
 
-	public void setPaisAutor(Pais paisAutor) {
-		this.paisAutor = paisAutor;
+	public void setPaisAutor(Pais pais) {
+		this.pais = pais;
 	}
 	
 	public String toString() {
-		return "Autor [Nome do Autor: " + nomeAutor + ", Cor do autor: " + corAutor + ", Gênero do autor: " 
-	+ generoAutor + ", País do Autor: " + paisAutor + "]";
+		return "Autor [Nome do Autor: " + nome + ", Cor do autor: " + cor + ", Gênero do autor: " 
+	+ genero + ", País do Autor: " + pais + "]";
 	}
 
 	

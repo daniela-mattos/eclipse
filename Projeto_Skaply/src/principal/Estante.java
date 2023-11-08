@@ -5,22 +5,22 @@ import java.util.List;
 
 public class Estante {
 	
-	private String nomeEstante;
+	private String estante;
 	private String local;
 	private int capacidade;
 	private List<LivroAdquirido> livrosEstante = new ArrayList<LivroAdquirido>();
 	
-	public Estante(String nomeEstante, String local) {
-		this.nomeEstante = nomeEstante;
+	public Estante(String estante, String local) {
+		this.estante = estante;
 		this.local = local;
 	}
 	
 	public String getNomeEstante() {
-		return nomeEstante;
+		return estante;
 	}
 
-	public void setNomeEstante(String nomeEstante) {
-		this.nomeEstante = nomeEstante;
+	public void setNomeEstante(String estante) {
+		this.estante = estante;
 	}
 
 	public String getLocal() {
@@ -39,12 +39,16 @@ public class Estante {
 		this.capacidade = capacidade;
 	}
 	
-	public void adicionaLivroEstante(LivroAdquirido livroAdq) {
+	public void adicionaLivroEstante(LivroAdquirido livroAdq, Estante estante) {
 		this.livrosEstante.add(livroAdq);
 	}
-	
+		
 	public List<LivroAdquirido> getLivrosEstante() {
 		return livrosEstante;
+	}
+	
+	public String toString() {
+		return "Estante [" + estante + ", Local: " + local + "] ";
 	}
 	
 }
