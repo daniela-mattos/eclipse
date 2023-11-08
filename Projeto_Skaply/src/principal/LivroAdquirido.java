@@ -7,32 +7,29 @@ public class LivroAdquirido {
 	private Livro livroAdq;
 	private String formato;
 	private boolean disponivel;
-	private Date dataAdq;
+	private Date data;
 	private String aquisicao;
 	private Estante estante;
 	private Idioma idioma;
+	private Ficha ficha;
 	
-	public LivroAdquirido(Livro livroAdq, Estante estante, String formato, String aquisicao, Idioma idioma, Date dataAdq) {
+	public LivroAdquirido(Livro livroAdq, Estante estante, String formato, String aquisicao, Idioma idioma) {
 		this.livroAdq = livroAdq;
 		this.estante = estante;
 		this.formato = formato;
 		this.aquisicao = aquisicao;
 		this.idioma = idioma;
-		this.dataAdq = dataAdq;
 	}
 
 	public boolean getDisponivel() {
 		return disponivel;
 	}
 
+	//ver como implementa essa parte
 	public void setDisponivel(boolean disponivel) {
 		this.disponivel = disponivel;
 	}
 	
-	public void registraFicha() {
-		
-	}
-
 	public Livro getLivroAdq() {
 		return livroAdq;
 	}
@@ -49,12 +46,12 @@ public class LivroAdquirido {
 		this.formato = formato;
 	}
 
-	public Date getDataAdq() {
-		return dataAdq;
+	public Date getData() {
+		return data;
 	}
 
-	public void setDataAdq(Date dataAdq) {
-		this.dataAdq = dataAdq;
+	public void setData(Date data) {
+		this.data = data;
 	}
 
 	public String getAquisicao() {
@@ -80,8 +77,18 @@ public class LivroAdquirido {
 	public void setIdioma(Idioma idioma) {
 		this.idioma = idioma;
 	}
+	
+	public Ficha getFicha() {
+		return ficha;
+	}
+
+	public void setFicha(Ficha ficha) {
+		this.ficha = ficha;
+	}
 
 	
-	
+	public String toString() {
+		return "Livro Adquirido [" + livroAdq + ", Estante" + estante + ", Formato " + formato + ", " + aquisicao + ", Idioma " + idioma + "] ";
+	}
 	
 }

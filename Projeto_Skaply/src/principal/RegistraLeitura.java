@@ -4,24 +4,24 @@ import java.util.Date;
 
 public class RegistraLeitura {
 
-	private LivroAdquirido titulo;
+	private LivroAdquirido livro;
 	private int paginasLidas;
 	private String anotacao;
-	private Date dataLeitura;
+	private Date data;
 	
-	public RegistraLeitura(LivroAdquirido titulo, int paginasLidas, String anotacao, Date dataLeitura) {
-		this.titulo = titulo;
+	public RegistraLeitura(LivroAdquirido livro, int paginasLidas, String anotacao, Date data) {
+		this.livro = livro;
 		this.paginasLidas = paginasLidas;
 		this.anotacao = anotacao;
-		this.dataLeitura = dataLeitura;
+		this.data = data;
 	}
 
 	public LivroAdquirido getTitulo() {
-		return titulo;
+		return livro;
 	}
 
 	public void setTitulo(LivroAdquirido titulo) {
-		this.titulo = titulo;
+		this.livro = titulo;
 	}
 
 	public int getPaginasLidas() {
@@ -40,14 +40,16 @@ public class RegistraLeitura {
 		this.anotacao = anotacao;
 	}
 
-	public Date getDataLeitura() {
-		return dataLeitura;
+	public Date getData() {
+		return data;
 	}
 
-	public void setDataLeitura(Date dataLeitura) {
-		this.dataLeitura = dataLeitura;
+	public void setData(Date data) {
+		this.data = data;
 	}
 	
-	
+	public String toString() {
+		return "Registro de Leitura [Livro: " + livro + " Número de Páginas: " + paginasLidas + " Anotação: " + anotacao + "Data: " + data + "] ";
+	}
 	
 }

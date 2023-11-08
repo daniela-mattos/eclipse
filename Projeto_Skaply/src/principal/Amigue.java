@@ -2,15 +2,24 @@ package principal;
 
 public class Amigue {
 
-	private String nomeAmigue;
+	private String nome;
 	private int telefone;
 	private String email;
-		
-	public String getNomeAmigue() {
-		return nomeAmigue;
+	
+	public Amigue(String nome) {
+		this.nome = nome;
 	}
-	public void setNomeAmigue(String nomeAmigue) {
-		this.nomeAmigue = nomeAmigue;
+	
+	public Amigue(String nome, String email) {
+		this.nome = nome;
+		this.email = email;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	public int getTelefone() {
 		return telefone;
@@ -26,7 +35,7 @@ public class Amigue {
 	}
 	
 	public String toString() {
-		return "Amigue [Nome: " + nomeAmigue + " Telefone: " + telefone + " E-mail: " + email + "] ";
+		return "Amigue [Nome: " + nome + " Telefone: " + telefone + " E-mail: " + email + "] ";
 	}
 	
 }

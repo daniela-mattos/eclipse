@@ -5,27 +5,32 @@ import java.util.List;
 
 public class Colecao {
 	
-	private String nomeColecao;
+	private String nome;
 	private String tema;
 	private List<LivroAdquirido> livrosColecao = new ArrayList<LivroAdquirido>();
 	
 	
-	public Colecao(String nomeColecao) {
-		this.nomeColecao = nomeColecao;
+	public Colecao(String nome) {
+		this.nome = nome;
 	}
 	
-	public Colecao(String nomeColecao, String tema, LivroAdquirido livroColecao) {
-		this.nomeColecao = nomeColecao;
+	public Colecao(String nome, String tema) {
+		this.nome = nome;
+		this.tema = tema;
+	}
+	
+	public Colecao(String nome, String tema, LivroAdquirido livroColecao) {
+		this.nome = nome;
 		this.tema = tema;
 		this.adicionaLivroColecao(livroColecao);
 	}
 
 	public String getNomeColecao() {
-		return nomeColecao;
+		return nome;
 	}
 
-	public void setNomeColecao(String nomeColecao) {
-		this.nomeColecao = nomeColecao;
+	public void setNomeColecao(String nome) {
+		this.nome = nome;
 	}
 
 	public String getTema() {
@@ -43,4 +48,10 @@ public class Colecao {
 	public List<LivroAdquirido> getLivrosColecao() {
 		return livrosColecao;
 	}
+	
+	
+	public String toString() {
+	    return "Coleção [Nome: " + nome + ", tema: " + tema + "]";
+	  }
+	
 }

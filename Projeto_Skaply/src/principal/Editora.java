@@ -2,21 +2,21 @@ package principal;
 
 public class Editora {
 
-	private String nomeEditora;
+	private String nome;
 
 	public Editora(String editora) {
-		this.setNomeEditora(editora);
+		this.setNome(editora);
 	}
 
 	public String getNomeEditora() {
-		return nomeEditora;
+		return nome;
 	}
 
-	public void setNomeEditora(String nomeEditora) {
-		this.nomeEditora = nomeEditora;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	public String toString() {
-		return "Editora [Nome da Editora: " + nomeEditora + "] ";
+		return "Editora [Nome da Editora: " + nome + "] ";
 	}
 }
