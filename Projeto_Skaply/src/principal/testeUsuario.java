@@ -33,7 +33,7 @@ public class testeUsuario {
 		edtr1 = new Editora("Rocco");
 		gnr1 = new Genero("Romance");
 		
-		atr2 = new Autor("Gustave Flaubert");
+		atr2 = new Autor("Gustave Flaubert ");
 		idiom2 = new Idioma("Francês");
 		pais2 = new Pais("França", idiom2);
 		atr2.setPaisAutor(pais2);
